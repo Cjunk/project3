@@ -10,7 +10,7 @@
 
 Generating a secret key from the command line. This will be used in conjuction with the postgresql database to security purposes.
 ~~~ 
-(base) root@JERICHO-PC: "echo -n 'the seed phrase' | sha256sum"
+(base) root@JERICHO-PC: "echo -n 'the seed phrase anything' | sha256sum"
 ~~~
 
 Creating the database. 

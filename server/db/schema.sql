@@ -1,7 +1,9 @@
+-- Is the below required?
 SET client_min_messages = 'error';
 
 -- DATABASE TYPES --------------------------------------------------------
-DROP TABLE IF EXISTS profile_settings,usertypes,profileType, users;
+
+DROP TABLE IF EXISTS profile_settings,usertypes,profileType,users;
 
 -- USERS 
 DROP TABLE IF EXISTS tagwords;
@@ -23,7 +25,7 @@ CREATE TABLE users ( -- All users that have access to Login
     githubID VARCHAR(20) NOT NULL,
     email TEXT UNIQUE,
     userType SMALLINT REFERENCES userTypes(typeID) NOT NULL,
-    title VARCHAR(8) NOT NULL ,
+    -- title VARCHAR(8) NOT NULL , Not sure if required
     firstName VARCHAR(20)NOT NULL ,
     lastName VARCHAR(30),
     photo TEXT,
