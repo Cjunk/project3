@@ -1,7 +1,7 @@
 SET client_min_messages = 'error';
 
 -- DATABASE TYPES --------------------------------------------------------
-DROP TABLE IF EXISTS profile_settings,usertypes,profileType,users;
+DROP TABLE IF EXISTS profile_settings,usertypes,profileType, users;
 
 -- USERS 
 DROP TABLE IF EXISTS tagwords;
