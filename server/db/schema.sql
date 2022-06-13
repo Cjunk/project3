@@ -2,6 +2,7 @@
 SET client_min_messages = 'error';
 
 -- DATABASE TYPES --------------------------------------------------------
+
 DROP TABLE IF EXISTS profile_settings,usertypes,profileType,users;
 
 -- USERS 
@@ -21,6 +22,7 @@ CREATE TABLE profileType ( -- Public or private
 -- USERS        --------------------------------------------------------
 CREATE TABLE users ( -- All users that have access to Login
     id SERIAL PRIMARY KEY,
+    githubID VARCHAR(20) NOT NULL,
     email TEXT UNIQUE,
     userType SMALLINT REFERENCES userTypes(typeID) NOT NULL,
     -- title VARCHAR(8) NOT NULL , Not sure if required
